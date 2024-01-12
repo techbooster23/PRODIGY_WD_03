@@ -1,0 +1,73 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ body {
+    background-color: #252525;
+ }
+ .game {
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+    gap: 10px;
+    justify-content: center;
+    margin: 30px 0 30px 0px ;
+ }
+ .game > div {
+   display: flex;
+   justify-content: center;
+   align-items:center;
+    background-color: #FF0000;
+    border-radius: 8%;
+    color : #414141;
+    font-size: 150px;
+    text-shadow: 3px 3px lightslategray;
+    
+    
+    
+    
+ }
+ .nw-gm , .reset{
+    background-color: #AF0404;
+    color: #EA906C;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14pt;
+    font-weight: bolder;
+ }
+ .whole-gm {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+ }
+ h1{
+    color: #F3EDC8;
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 10px;
+ }
+ 
+.sw-winner{
+   font-size: 5em;
+   color: #F9DBBB;
+   margin: 250px 0px 150px 0px;
+}
+.hidden {
+    display: none;
+}
+.pressed {
+   background-color: #c25050;
+}
+.gmbtn:active{
+   animation: clicked 4s;
+}
+
+@keyframes clicked {
+   from {
+      background-color: #f03d3d;
+   }
+   to {
+      background-color: #AF0404;
+   }
+}
